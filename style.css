@@ -12,7 +12,7 @@ body{
 
     background-position:center;
 
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     background-repeat:no-repeat;
 
@@ -195,10 +195,10 @@ header p{
 
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     header h1{
-        font-size:40px;
+        font-size:42px;
     }
 
     header p{
@@ -206,21 +206,36 @@ header p{
     }
 
     #roster{
-
         grid-template-columns:1fr;
-
-        padding:20px;
-
-        gap:25px;
-
+        padding:15px;
+        gap:20px;
     }
 
     .card{
+        width:100%;
+        max-width:340px;
+        height:auto;
+    }
 
-    width:320px;
+    .card img{
+        height:auto;
+    }
 
-    height:auto;
+    .card h2{
+        font-size:28px;
+    }
 
-}
+    .card p{
+        font-size:18px;
+    }
+
+    .stats div{
+        font-size:16px;
+    }
+
+    .stats span{
+        font-size:16px;
+        letter-spacing:0;
+    }
 
 }

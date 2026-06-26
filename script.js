@@ -16,11 +16,11 @@ supporto:1
 nome:"Vivienne Fox",
 classe:"Ladro",
 immagine:"images/vivienne.jpg",
-facilita:2.5,
+facilita:3,
 danni:4,
 difesa:3,
 mobilita:5,
-controllo:3.5,
+controllo:3,
 supporto:1
 },
 
@@ -33,7 +33,7 @@ danni:3,
 difesa:3,
 mobilita:4,
 controllo:3,
-supporto:3.5
+supporto:3
 },
 
 {
@@ -42,8 +42,8 @@ classe:"Monaco",
 immagine:"images/kaede.jpg",
 facilita:3,
 danni:4,
-difesa:3.5,
-mobilita:4.5,
+difesa:4,
+mobilita:4,
 controllo:4,
 supporto:2
 },
@@ -64,12 +64,12 @@ supporto:2
 nome:"Rask 'Red Dust'",
 classe:"Artefice",
 immagine:"images/rask.jpg",
-facilita:2.5,
+facilita:2,
 danni:4,
 difesa:3,
 mobilita:2,
-controllo:4.5,
-supporto:4.5
+controllo:4,
+supporto:4
 },
 
 {
@@ -79,9 +79,9 @@ immagine:"images/daphne.jpg",
 facilita:3,
 danni:5,
 difesa:2,
-mobilita:2.5,
+mobilita:2,
 controllo:5,
-supporto:2.5
+supporto:2
 },
 
 {
@@ -93,7 +93,7 @@ danni:4,
 difesa:5,
 mobilita:2,
 controllo:3,
-supporto:3.5
+supporto:3
 },
 
 {
@@ -102,9 +102,9 @@ classe:"Warlock",
 immagine:"images/kael.jpg",
 facilita:2,
 danni:4,
-difesa:2.5,
-mobilita:2.5,
-controllo:4.5,
+difesa:2,
+mobilita:2,
+controllo:5,
 supporto:3
 },
 
@@ -124,10 +124,10 @@ supporto:3
 nome:"Toren, Primo Albero",
 classe:"Druido",
 immagine:"images/toren.jpg",
-facilita:2.5,
+facilita:2,
 danni:4,
 difesa:4,
-mobilita:3.5,
+mobilita:4,
 controllo:4,
 supporto:5
 },
@@ -137,10 +137,10 @@ nome:"Harlan, il Mastino",
 classe:"Guerriero",
 immagine:"images/harlan.jpg",
 facilita:3,
-danni:3.5,
+danni:3,
 difesa:4,
-mobilita:3.5,
-controllo:4.5,
+mobilita:3,
+controllo:4,
 supporto:2
 },
 
@@ -150,9 +150,9 @@ classe:"Paladino",
 immagine:"images/thalia.jpg",
 facilita:4,
 danni:4,
-difesa:4.5,
-mobilita:3.5,
-controllo:2.5,
+difesa:4,
+mobilita:3,
+controllo:2,
 supporto:4
 }
 ];
@@ -161,13 +161,10 @@ const roster = document.getElementById("roster");
 
 function stelle(valore){
 
-let piene = Math.floor(valore);
-let mezza = valore % 1 >= 0.5 ? 1 : 0;
-let vuote = 5 - piene - mezza;
+    let stelle = Math.round(valore);
 
-return "★".repeat(piene)
-     + (mezza ? "⯨" : "")
-     + "☆".repeat(vuote);
+    return "★".repeat(stelle)
+         + "☆".repeat(5-stelle);
 
 }
 
@@ -203,4 +200,4 @@ campioni.forEach(campione=>{
 
     `;
 
-});
+}
