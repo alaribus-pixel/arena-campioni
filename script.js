@@ -234,6 +234,10 @@ campioni.forEach(campione=>{
 
         <p>${campione.classe}</p>
 
+        <p class="flavour">${campione.flavour}</p>
+
+<p class="fight">${campione.fight}</p>
+
        <div class="stats">
 
 <div>Facilità <span>${stelle(campione.facilita)}</span></div>

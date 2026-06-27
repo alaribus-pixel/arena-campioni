@@ -76,35 +76,9 @@ header p{
 
 .card{
 
-    background:#252525;
-
-    border:2px solid #3a3a3a;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    transition:.25s;
-
-    cursor:pointer;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#f0c84b;
-
-    box-shadow:0 0 30px rgba(255,200,0,.25);
-
-}
-
-.card{
-
     width:320px;
 
-    height:760px;
+    min-height:760px;
 
     margin:auto;
 
@@ -116,13 +90,23 @@ header p{
 
     overflow:hidden;
 
-    transition:.25s;
-
-    cursor:pointer;
-
     display:flex;
 
     flex-direction:column;
+
+    transition:.25s;
+    
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#f0c84b;
+
+    box-shadow:0 0 30px rgba(255,200,0,.25);
 
 }
 
@@ -236,6 +220,34 @@ header p{
     .stats span{
         font-size:16px;
         letter-spacing:0;
-    }
+    }}
+
+.flavour{
+
+    color:#f0c84b;
+
+    font-style:italic;
+
+    font-size:15px;
+
+    text-align:center;
+
+    padding:0 18px;
+
+    margin-bottom:10px;
+
+}
+
+.fight{
+
+    color:#d5d5d5;
+
+    font-size:15px;
+
+    text-align:center;
+
+    padding:0 18px;
+
+    margin-bottom:20px;
 
 }
